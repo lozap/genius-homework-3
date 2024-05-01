@@ -68,7 +68,7 @@
             <p class="hero-subtitle">Косметологічна клініка</p>
             <h1 lang="en" class="hero-title">Beauty Zone</h1>
             <div class="hero-button-box">
-              <button class="button" type="button">Замовити дзвінок</button>
+              <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
               <p class="hero-subscribe">
                 Запишись та отримай безкоштовну консультацію нашого
                 косметолога
@@ -218,16 +218,19 @@
               width="600" height="450" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="subscribe-block">
-              <p>
-                Запишіться <span class="accent">безкоштовно</span> та
-                отримайте подарунок
-              </p>
-              <button class="button" type="button">
-                Записатись безкоштовно
-              </button>
-              <p class="policy">
-                Натискаючи на кнопку я погоджуюся з <br /><a href="#" target="_blank">політикою конфіденційності</a>
-              </p>
+              <div class="subscribe-form">
+                <p class="subscribe-header">
+                  Запишіться <span class="accent">безкоштовно</span> та
+                  отримайте подарунок
+                </p>
+                <button class="button" type="button">
+                  Записатись безкоштовно
+                </button>
+                <p class="policy">
+                  Натискаючи на кнопку я погоджуюся з <br /><a href="#" target="_blank">політикою конфіденційності</a>
+                </p>
+              </div>
+
             </div>
           </div>
         </div>
@@ -242,28 +245,28 @@
         </a>
         <nav class="footer-nav">
           <ul class="footer-menu">
-            <li><a class="footer-link" href="#about-section">Про нас</a></li>
+            <li><a class="link" href="#about-section">Про нас</a></li>
             <li>
-              <a class="footer-link" href="#adventages-section">Чому ми</a>
+              <a class="link" href="#adventages-section">Чому ми</a>
             </li>
             <li>
-              <a class="footer-link" href="#procedures-section">Наші процедури</a>
+              <a class="link" href="#procedures-section">Наші процедури</a>
             </li>
             <li>
-              <a class="footer-link" href="#contacts-section">Контакти</a>
+              <a class="link" href="#contacts-section">Контакти</a>
             </li>
           </ul>
         </nav>
         <div class="footer-contacts">
           <ul class="footer-address">
             <li>
-              <a class="footer-link address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+              <a class="link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
             </li>
             <li>
-              <a class="footer-link address-link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+              <a class="link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
             </li>
             <li>
-              <a class="footer-link address-link" href="https://maps.app.goo.gl/mF7qDK98x4oyHW5W7" target="_blank">
+              <a class="link" href="https://maps.app.goo.gl/mF7qDK98x4oyHW5W7" target="_blank">
                 Україна, м. Київ, <br>вул. Тараса Шевченка 5</a>
             </li>
           </ul>
@@ -292,7 +295,7 @@
           </ul>
         </div>
         <div class="footer-policy">
-          <a class="footer-link" href="#" target="_blank">
+          <a class="link" href="#" target="_blank">
             Політика конфіденційності
           </a>
           <p class="address-copyright">&copy; 2024 Дані захищені</p>
@@ -301,6 +304,13 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden">
+    <div class="modal">
+      <button class="modal-btn-close" type="button">Закрити</button>
+    </div>
+  </div>
 </body>
+
+<script src="./js/modal.js"></script>
 
 </html>
