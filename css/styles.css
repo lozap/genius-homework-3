@@ -572,8 +572,10 @@ h2 {
 
 .contacts-section {
   position: relative;
+  display: flex;
   top: 200px;
   width: 100%;
+  justify-content: center;
 }
 
 .contact-container {
